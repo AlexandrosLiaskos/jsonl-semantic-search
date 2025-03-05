@@ -1,0 +1,56 @@
+{
+  "name": "jsonl-semantic-search",
+  "version": "1.0.0",
+  "description": "Advanced semantic search tool for JSONL databases with mathematical and logical relevance scoring",
+  "main": "src/index.js",
+  "bin": {
+    "jsonl-search": "./src/cli.js"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "node src/cli.js",
+    "test": "node test/basic.test.js",
+    "build": "tsc",
+    "analyze": "node src/cli.js analyze",
+    "index": "node src/cli.js index",
+    "search": "node src/cli.js search"
+  },
+  "keywords": [
+    "jsonl",
+    "semantic-search",
+    "vector-embeddings",
+    "nlp",
+    "database",
+    "indexing"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@huggingface/inference": "^3.5.1",
+    "@tensorflow/tfjs-node": "^4.17.0",
+    "chalk": "^4.1.2",
+    "commander": "^11.1.0",
+    "faiss-node": "^0.5.1",
+    "jsonl": "^1.1.2",
+    "lodash": "^4.17.21",
+    "morpha": "^0.2.6",
+    "natural": "^6.10.4",
+    "node-fetch": "^2.7.0",
+    "ora": "^5.4.1",
+    "p-limit": "^4.0.0",
+    "progress": "^2.0.3",
+    "similarity": "^1.2.1",
+    "stopword": "^2.0.8",
+    "word2vec": "^1.1.5"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "typescript": "^5.3.3"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

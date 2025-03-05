@@ -15,7 +15,8 @@
     "build": "tsc",
     "analyze": "node src/cli.js analyze",
     "index": "node src/cli.js index",
-    "search": "node src/cli.js search"
+    "search": "node src/cli.js search",
+    "prepublishOnly": "npm test"
   },
   "keywords": [
     "jsonl",
@@ -25,8 +26,22 @@
     "database",
     "indexing"
   ],
-  "author": "",
+  "author": "Alexandros Liaskos",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexandrosLiaskos/jsonl-semantic-search.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AlexandrosLiaskos/jsonl-semantic-search/issues"
+  },
+  "homepage": "https://github.com/AlexandrosLiaskos/jsonl-semantic-search#readme",
+  "files": [
+    "src/",
+    "examples/",
+    "LICENSE",
+    "README.md"
+  ],
   "dependencies": {
     "@huggingface/inference": "^3.5.1",
     "@tensorflow/tfjs-node": "^4.17.0",
